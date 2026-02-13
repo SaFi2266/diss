@@ -1,0 +1,10 @@
+{
+  "name": "diwaniya-industrial-student-registry",
+  "version": "1.0.0",
+  "description": "Offline-first PWA for student records with WordPress sync plugin",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check public/app.js"
+  }
+}
