@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1f3a5f" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="/styles.css" />
+  <title>إعدادية الديوانية الصناعية - سجل الطلبة</title>
+</head>
+<body>
+  <header>
+    <img src="/logo.png" alt="شعار المدرسة" onerror="this.style.display='none'" />
+    <div>
+      <h1>إعدادية الديوانية الصناعية</h1>
+      <p>نظام إدارة سجلات الطلاب (Offline-First PWA)</p>
+    </div>
+    <span id="net"></span>
+  </header>
+  <nav>
+    <button data-tab="search">بحث</button>
+    <button data-tab="add">إضافة</button>
+    <button data-tab="edit">تعديل</button>
+    <button data-tab="import">استيراد/تصدير</button>
+    <select id="roleSel"><option value="writer">كاتب</option><option value="supervisor">مشرف</option><option value="admin">مدير</option></select>
+  </nav>
+
+  <main>
+    <section id="search" class="tab active">
+      <input id="q" placeholder="ابحث باسم الطالب او جزء منه" />
+      <div id="results"></div>
+    </section>
+
+    <section id="add" class="tab">
+      <form id="studentForm"></form>
+      <button id="saveBtn">حفظ الطالب</button>
+      <p id="saveMsg"></p>
+    </section>
+
+    <section id="edit" class="tab">
+      <p>اختر طالباً من نتائج البحث واضغط ✏️ للتعديل.</p>
+      <div id="editor"></div>
+    </section>
+
+    <section id="import" class="tab">
+      <textarea id="csvIn" rows="8" placeholder="الصق CSV هنا"></textarea>
+      <button id="importBtn">استيراد CSV</button>
+      <button id="exportBtn">تصدير CSV</button>
+      <pre id="csvOut"></pre>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
