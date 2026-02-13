@@ -1,0 +1,11 @@
+body{font-family:Tahoma,Arial,sans-serif;margin:0;background:#f4f7fb;color:#16324f}
+header{display:flex;gap:16px;align-items:center;padding:12px 18px;background:#1f3a5f;color:#fff}
+header img{width:56px;height:56px;border-radius:8px;background:#fff}
+nav{display:flex;gap:8px;padding:10px;background:#e6edf6;position:sticky;top:0}
+button{border:0;background:#1f3a5f;color:#fff;padding:8px 14px;border-radius:8px;cursor:pointer}
+select,input,textarea{padding:8px;border:1px solid #aac1db;border-radius:8px}
+main{padding:16px}
+.tab{display:none}.tab.active{display:block}
+#results{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:10px;margin-top:12px}
+.card{background:#fff;padding:10px;border-radius:12px;box-shadow:0 1px 6px #0001}
+.key{font-size:20px;color:#7a1120;font-weight:bold}
